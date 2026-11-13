@@ -1,68 +1,127 @@
+<div align="center">
+
+![U4 Diagnóstico — diagnóstico offline e acesso ao menu CVTE](docs/assets/cover.svg)
+
 # U4 Diagnóstico
 
-Aplicativo Android offline para abrir o menu técnico original da CVTE e reunir informações de diagnóstico em um projetor BYINTEK U4.
+**O menu certo. Os dados do seu aparelho. Tudo local.**
 
-**[Baixar APK 1.2](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2/U4-Diagnostico-1.2.apk)** · [Releases](https://github.com/Ziero25/u4-diagnostico/releases)
+Um pequeno auxiliar Android para abrir o menu original da CVTE e investigar o BYINTEK U4.
 
-O atalho foi confirmado em uma unidade U4 com Android 9 e firmware `20250217_111113`: o menu abriu, a opção ADB foi habilitada pelo usuário e a conexão pela rede funcionou. Isso não confirma compatibilidade com todas as revisões do U4.
+[![Release v1.2](https://img.shields.io/badge/release-v1.2-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2)
+[![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-14b8a6?style=flat-square)](LICENSE)
+[![Android 9 testado](https://img.shields.io/badge/Android-9%20testado-3b82f6?style=flat-square)](docs/COMPATIBILIDADE.md)
+[![Offline](https://img.shields.io/badge/conex%C3%A3o-offline-64748b?style=flat-square)](docs/PRIVACIDADE.md)
 
-O projeto não é um aplicativo oficial da BYINTEK ou da CVTE. Ele não instala root nem firmware e não remove aplicativos.
+### [Baixar APK 1.2](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2/U4-Diagnostico-1.2.apk)
 
-## Usar o atalho
+[Começar a usar](docs/USO.md) · [Compatibilidade](docs/COMPATIBILIDADE.md) · [Privacidade](docs/PRIVACIDADE.md) · [Compilar](docs/DESENVOLVIMENTO.md)
 
-1. Instale o APK e abra **U4 Diagnóstico**.
-2. Escolha **Abrir menu CVTE identificado no seu projetor** e confirme.
-3. No menu original, entre apenas em **Debug → ADB Enable → On**.
-4. Saia usando **Voltar**. A conexão ADB usa o IP local do aparelho e a porta `5555` nesse firmware.
-5. Ao terminar o trabalho, volte ao mesmo menu, coloque **ADB Enable → Off** e confirme que a conexão fechou.
+</div>
 
-**Use somente a opção ADB.** O menu original inclui `Shipping Init`, `Board Init`, `Aging Mode` e opções de painel, motores e calibração. Essas opções podem resetar ou desconfigurar o aparelho. O auxiliar envia apenas os comandos de abrir e fechar a janela.
+---
 
-O botão **Fechar menu CVTE** fecha a janela; ele não desliga um ADB que você tenha ativado. A proteção do ADB na rede depende do firmware: utilize apenas uma rede confiável e desative a depuração ao concluir.
+## O que ele faz
 
-## Compatibilidade conferida pelo app
+| Recurso | Como funciona |
+| :--- | :--- |
+| **Atalho para o menu CVTE** | Abre a janela técnica original para você acessar a opção ADB. |
+| **Conferência do componente** | Verifica versão, certificado e acesso ao serviço antes de chamá-lo. |
+| **Diagnóstico em um arquivo** | Reúne dados técnicos e APKs de configurações em um ZIP salvo no aparelho. |
+| **Funcionamento offline** | O auxiliar não possui permissão de acesso à internet. |
 
-O atalho só chama o componente quando encontra:
+O acesso foi confirmado em **uma unidade BYINTEK U4 com Android 9**, firmware `20250217_111113`. O menu abriu, o usuário ativou a opção ADB e a conexão pela rede funcionou. Outras revisões precisam de verificação própria.
 
-- Pacote `com.cvte.fac.menu`, versão `1.2.70`.
-- Serviço `com.cvte.fac.menu.app.TvMenuWindowManagerService`, habilitado e exportado, sem permissão adicional de chamada.
-- Certificado público SHA-256 `8152aa9954af235d7aa208b4b7df2d8cac8b2dc44a33d8d9c3ca3e05ca2000ca`.
+## Comece em quatro passos
 
-Em caso de diferença, o app informa o bloqueio. Ele não substitui nem inclui o APK da fabricante. O certificado acima é uma impressão pública, não uma chave privada.
+1. **Instale** o [APK da release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2), por exemplo usando um pendrive.
+2. **Abra** o U4 Diagnóstico e escolha **Abrir menu CVTE identificado no seu projetor**.
+3. **Ative** somente **Debug → ADB Enable → On**, dentro do menu original.
+4. **Saia** com **Voltar** e conecte o computador ao IP do projetor, na porta `5555` nesse firmware.
 
-## Diagnóstico e privacidade
+> [!IMPORTANT]
+> Use somente **ADB Enable**. As outras opções do menu original incluem reset, painel, motores e calibração e podem desconfigurar o aparelho. Ao concluir, coloque **ADB Enable → Off** e confira se a conexão foi encerrada.
 
-**Gerar diagnóstico para análise** salva `Download/U4-Diagnostico/U4-diagnostico.zip` no aparelho. O arquivo contém propriedades técnicas selecionadas, lista de aplicativos de sistema, atividades dos apps de configurações, impressões dos certificados públicos e cópias dos APKs de configurações que puderem ser lidos.
+O botão **Fechar menu CVTE** fecha a janela técnica. Ele não desliga o ADB que você tenha ativado. Veja o [guia de uso](docs/USO.md) para os passos completos e solução de problemas.
 
-O app não tem permissão `INTERNET`. Não copia dados privados dos aplicativos, contas, senhas, fotos ou vídeos. Não coleta número de série, Android ID, IP ou MAC. Solicita acesso ao armazenamento no Android 6 a 9 apenas para salvar o ZIP. A permissão `WRITE_SECURE_SETTINGS`, declarada para uma tentativa compatível com builds privilegiadas, normalmente não é concedida a um APK comum.
+## Feito para uma revisão conhecida
 
-O ZIP de diagnóstico pode conter software proprietário do fabricante e informações específicas do aparelho. **Não o publique em issues públicas.** O repositório distribui apenas o código do auxiliar e seu APK, não os relatórios ou APKs coletados.
+| Item | Identificação conferida |
+| :--- | :--- |
+| Sistema testado | Android 9 · API 28 |
+| Plataforma da unidade testada | HiSilicon Hi3751V350 · `bigfish` |
+| Firmware exibido no aparelho | `20250217_111113` |
+| Componente do menu | `com.cvte.fac.menu`, versão `1.2.70` |
+| Acesso ao atalho | Sem exigir root |
 
-O código mantém a restauração de uma tentativa de ADB por root preexistente das versões anteriores. Na interface 1.2, esse botão só aparece se houver uma restauração pendente. Não desinstale nem apague os dados do auxiliar antes de concluir essa restauração.
+O nome **U4** ou o processador sozinho não confirma compatibilidade. O aplicativo também confere a assinatura do componente e bloqueia a chamada quando ela diverge. [Entenda as verificações e os limites →](docs/COMPATIBILIDADE.md)
 
-## Compilar no Windows
+## Seus dados ficam no aparelho
 
-Requisitos: PowerShell, JDK 21, Android SDK Platform `android-35` e Build Tools `34.0.0`. Não há Gradle nem dependências de execução externas.
+O diagnóstico é salvo em:
+
+```text
+Download/U4-Diagnostico/U4-diagnostico.zip
+```
+
+Ele inclui informações técnicas selecionadas, inventário de apps de sistema e cópias dos programas de configurações que puderem ser lidos. O auxiliar não copia dados privados desses aplicativos nem envia o ZIP automaticamente.
+
+**Relatórios de diagnóstico não devem ser publicados em issues públicas.** Eles podem conter informações específicas do aparelho e software proprietário do fabricante. Consulte a [descrição dos dados e permissões](docs/PRIVACIDADE.md).
+
+## Para desenvolver
+
+O projeto usa **Java e Android SDK**, com scripts PowerShell. Não depende de Gradle.
 
 ```powershell
+# Executar as verificações locais
 .\test.ps1
+
+# Gerar um APK com assinatura local de desenvolvimento
 .\build.ps1 -SdkPath "$env:LOCALAPPDATA\Android\Sdk"
 ```
 
-Se o Java não estiver no `PATH`, informe `-JavaBin 'caminho\do\jdk\bin'` aos dois scripts. Também é possível usar `JAVA_HOME`, `ANDROID_SDK_ROOT` ou `ANDROID_HOME`.
+O ambiente validado usa **JDK 21**, **Android Platform 35** e **Build Tools 34.0.0**. Os testes cobrem **26 verificações** de identidade, comandos e restauração de estados ADB.
 
-O resultado local fica em `dist/U4-Diagnostico.apk`. A compilação cria uma chave local em `build/local-signing.p12`, ignorada pelo Git. Ela usa senha de desenvolvimento conhecida e serve apenas para builds locais. Para assinar com uma chave própria, informe `-KeystorePath`, `-StorePassword`, `-KeyPassword` e `-KeyAlias`; as senhas também podem vir de `U4_STORE_PASSWORD` e `U4_KEY_PASSWORD`.
+[Preparar o ambiente, compilar e assinar →](docs/DESENVOLVIMENTO.md)
 
-**A chave da release não está neste repositório.** Uma compilação com outra chave não atualiza por cima do APK publicado. Se houver restauração pendente, conclua-a antes de remover uma versão instalada.
+<details>
+<summary><strong>Verificar o APK publicado</strong></summary>
 
-## Verificação
-
-Os testes locais cobrem 11 verificações de identidade/comando CVTE e 15 verificações de validação e restauração dos estados ADB. O APK publicado teve sua assinatura e integridade ZIP verificadas.
-
-SHA-256 do APK 1.2:
+SHA-256 de `U4-Diagnostico-1.2.apk`:
 
 ```text
 a72044cc22f8cadd87a3e589926ff9a5d3ae353961394849ffb8503bbceb3187
 ```
 
-Esses testes não substituem a confirmação no dispositivo de outra revisão de hardware ou firmware.
+No PowerShell:
+
+```powershell
+Get-FileHash .\U4-Diagnostico-1.2.apk -Algorithm SHA256
+```
+
+O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2) e em [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt).
+
+</details>
+
+## Navegue pelo projeto
+
+| Documento | Conteúdo |
+| :--- | :--- |
+| [Guia de uso](docs/USO.md) | Instalação, menu ADB, diagnóstico e problemas comuns. |
+| [Compatibilidade](docs/COMPATIBILIDADE.md) | Revisão testada, contrato do serviço e limitações. |
+| [Privacidade](docs/PRIVACIDADE.md) | Dados coletados, permissões e cuidado com os relatórios. |
+| [Desenvolvimento](docs/DESENVOLVIMENTO.md) | Ambiente, testes, compilação e assinatura. |
+| [Histórico](CHANGELOG.md) | Evolução das versões do auxiliar. |
+| [Como contribuir](CONTRIBUTING.md) | Relatos úteis e alterações no código. |
+
+## Licença
+
+**Gratuito e de código aberto, sob a [licença MIT](LICENSE).** Você pode usar, modificar e redistribuir o código, inclusive comercialmente, preservando os avisos de autoria e licença. O software é fornecido sem garantia.
+
+A licença cobre o código e os materiais autorais deste projeto. Os APKs do fabricante eventualmente copiados pelo diagnóstico permanecem sujeitos às licenças dos respectivos titulares e não são distribuídos neste repositório.
+
+<div align="center">
+
+Mantido por [Ziero25](https://github.com/Ziero25) · Projeto independente, sem vínculo oficial com BYINTEK ou CVTE.
+
+</div>

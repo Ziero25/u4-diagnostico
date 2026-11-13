@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title description">
+  <title id="title">U4 Diagnóstico</title>
+  <desc id="description">Diagnóstico local para o BYINTEK U4. Atalho CVTE, funcionamento offline e licença MIT.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#132e35"/>
+    </linearGradient>
+    <linearGradient id="light" x2="1">
+      <stop stop-color="#2dd4bf" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="348" rx="26" fill="url(#background)" stroke="#29434b"/>
+  <g fill="none" stroke="#24404a" opacity="0.5">
+    <path d="M780 40V310M860 40V310M940 40V310M1020 40V310M1100 40V310"/>
+    <path d="M740 95H1160M740 175H1160M740 255H1160"/>
+  </g>
+  <rect x="62" y="54" width="144" height="29" rx="14.5" fill="#163d3d"/>
+  <text x="134" y="73" text-anchor="middle" fill="#5eead4" font-size="12" font-weight="700" letter-spacing="1.6" font-family="Segoe UI,Arial,sans-serif">ANDROID · CVTE</text>
+  <text x="60" y="153" fill="#f8fafc" font-size="61" font-weight="700" letter-spacing="-2" font-family="Segoe UI,Arial,sans-serif">U4 Diagnóstico</text>
+  <text x="63" y="202" fill="#b7c9d5" font-size="24" font-family="Segoe UI,Arial,sans-serif">Diagnóstico local para o BYINTEK U4.</text>
+  <text x="63" y="278" fill="#75d8cd" font-size="16" font-family="Segoe UI,Arial,sans-serif">Atalho CVTE</text>
+  <circle cx="180" cy="272" r="2.5" fill="#597985"/>
+  <text x="200" y="278" fill="#b7c9d5" font-size="16" font-family="Segoe UI,Arial,sans-serif">Offline</text>
+  <circle cx="269" cy="272" r="2.5" fill="#597985"/>
+  <text x="289" y="278" fill="#b7c9d5" font-size="16" font-family="Segoe UI,Arial,sans-serif">Código aberto · MIT</text>
+  <path d="M997 138L1170 82V267L997 211Z" fill="url(#light)"/>
+  <rect x="826" y="111" width="202" height="134" rx="22" fill="#152c38" stroke="#6ee7d7" stroke-width="2"/>
+  <rect x="842" y="127" width="170" height="102" rx="13" fill="#0b1823"/>
+  <circle cx="972" cy="178" r="29" fill="#163c42" stroke="#5eead4" stroke-width="2"/>
+  <circle cx="972" cy="178" r="17" fill="#204f58"/>
+  <circle cx="966" cy="172" r="6" fill="#99f6e4"/>
+  <g stroke="#597f8d" stroke-width="4" stroke-linecap="round">
+    <path d="M860 156H902M860 172H902M860 188H902M860 204H884"/>
+  </g>
+  <path d="M855 245V255M998 245V255" stroke="#80a4ae" stroke-width="6" stroke-linecap="round"/>
+</svg>
