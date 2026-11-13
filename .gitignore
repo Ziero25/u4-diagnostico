@@ -1,0 +1,14 @@
+/build/
+/dist/
+/test-build/
+/diagnosticos/
+*.p12
+*.jks
+*.keystore
+*.idsig
+*.zip
+*.tmp
+*.partial
+local.properties
+.env
+.env.*
