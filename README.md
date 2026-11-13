@@ -155,7 +155,7 @@ O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnost
 
 ## Licença
 
-**Gratuito e de código aberto, sob a [licença MIT](LICENSE).** Você pode usar, modificar e redistribuir o código, inclusive comercialmente, preservando os avisos de autoria e licença. O software é fornecido sem garantia.
+**Gratuito e de código aberto, sob a [licença MIT](LICENSE).** Preserve os avisos de autoria e licença ao compartilhar o projeto. O software é fornecido sem garantia.
 
 A licença cobre o código e os materiais autorais deste projeto. Os APKs do fabricante eventualmente copiados pelo diagnóstico permanecem sujeitos às licenças dos respectivos titulares e não são distribuídos neste repositório.
 

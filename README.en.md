@@ -149,7 +149,7 @@ Compare with [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt) or the checksu
 
 ## License
 
-**Free and open source under the [MIT license](LICENSE).** You may use, modify and redistribute the project, including commercially, while retaining the copyright and license notices. The software is provided without warranty.
+**Free and open source under the [MIT license](LICENSE).** Retain the copyright and license notices when sharing the project. The software is provided without warranty.
 
 The license covers this project's original code and materials. Manufacturer APKs that a report may copy remain subject to their owners' licenses and are not distributed in this repository.
 
