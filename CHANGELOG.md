@@ -1,5 +1,14 @@
 # Histórico
 
+## 1.2.1 — termos de distribuição
+
+- Novas publicações oferecidas sob termos de uso gratuito e redistribuição não comercial, com proibição de venda e redistribuição comercial.
+- Preservação expressa das permissões anteriores sobre a versão 1.2 e o material já publicado sob MIT, documentada em `NOTICE` e nos guias de licença.
+- Termos e avisos incluídos no APK e botão **Licença e condições de uso**.
+- Textos, selos e capas atuais deixam de apresentar a publicação como MIT ou código aberto.
+- Mesma chave de assinatura da versão 1.2; atualização com versionCode 4. Não foram alterados os comandos de acesso ao menu CVTE.
+- Compilação, assinatura e 26 verificações locais conferidas; sem novo teste no projetor.
+
 ## Apresentação e documentação bilíngue
 
 - Título e descrição com BYINTEK U4, ADB e CVTE em destaque.
@@ -13,7 +22,7 @@
 
 - README reorganizado, com capa própria, download em destaque e navegação entre os guias.
 - Guias de uso, compatibilidade, privacidade e desenvolvimento.
-- Orientações para contribuir e licença MIT para o código e os materiais autorais.
+- Orientações para contribuir e licença MIT na publicação anterior, com permissões preservadas para aquele material; veja a transição registrada na versão 1.2.1.
 - APK 1.2 preservado, com o mesmo checksum e assinatura.
 
 ## 1.2

@@ -14,7 +14,7 @@
 | Settings package | `com.cvte.settings` |
 | Technical menu package | `com.cvte.fac.menu` · `1.2.70` |
 
-The shortcut opened the menu on this unit. The owner enabled ADB manually, and a computer successfully connected. The `userdebug` build type was not treated as evidence of root: no accessible `su` executable was found.
+The version 1.2 shortcut opened the menu on this unit. The owner enabled ADB manually, and a computer successfully connected. Version 1.2.1 adds license terms and notices; its build and local checks passed, without a new hardware test. The `userdebug` build type was not treated as evidence of root: no accessible `su` executable was found.
 
 ## Checks before the call
 

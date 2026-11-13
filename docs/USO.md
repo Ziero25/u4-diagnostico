@@ -4,7 +4,7 @@
 
 ## 1. Instalar
 
-Baixe `U4-Diagnostico-1.2.apk` pela [release oficial deste repositório](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2). Você pode copiar o arquivo para um pendrive, conectá-lo ao projetor e abrir o APK no gerenciador de arquivos.
+Baixe `U4-Diagnostico-1.2.1.apk` pela [release oficial deste repositório](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1). Você pode copiar o arquivo para um pendrive, conectá-lo ao projetor e abrir o APK no gerenciador de arquivos.
 
 Confirme a instalação quando o Android solicitar. Se já houver uma versão anterior assinada com a mesma chave, o instalador permite atualizar por cima dela.
 

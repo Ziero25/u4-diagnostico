@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title description">
   <title id="title">U4 Diagnóstico</title>
-  <desc id="description">Diagnóstico local para o BYINTEK U4. Atalho CVTE, funcionamento offline e licença MIT.</desc>
+  <desc id="description">Diagnóstico local para o BYINTEK U4. Atalho CVTE, funcionamento offline e uso gratuito.</desc>
   <defs>
     <linearGradient id="background" x2="1" y2="1">
       <stop stop-color="#0b1220"/>
@@ -24,7 +24,7 @@
   <circle cx="180" cy="272" r="2.5" fill="#597985"/>
   <text x="200" y="278" fill="#b7c9d5" font-size="16" font-family="Segoe UI,Arial,sans-serif">Offline</text>
   <circle cx="269" cy="272" r="2.5" fill="#597985"/>
-  <text x="289" y="278" fill="#b7c9d5" font-size="16" font-family="Segoe UI,Arial,sans-serif">Código aberto · MIT</text>
+  <text x="289" y="278" fill="#b7c9d5" font-size="16" font-family="Segoe UI,Arial,sans-serif">Código disponível · Gratuito</text>
   <path d="M997 138L1170 82V267L997 211Z" fill="url(#light)"/>
   <rect x="826" y="111" width="202" height="134" rx="22" fill="#152c38" stroke="#6ee7d7" stroke-width="2"/>
   <rect x="842" y="127" width="170" height="102" rx="13" fill="#0b1823"/>

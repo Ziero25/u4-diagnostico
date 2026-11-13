@@ -12,12 +12,12 @@ O **U4 Diagnóstico** é um auxiliar gratuito e offline para o projetor BYINTEK 
 
 **Português** · [English](README.en.md)
 
-[![Release v1.2](https://img.shields.io/badge/release-v1.2-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2)
-[![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-14b8a6?style=flat-square)](LICENSE)
+[![Release v1.2.1](https://img.shields.io/badge/release-v1.2.1-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1)
+[![Redistribuição não comercial](https://img.shields.io/badge/redistribui%C3%A7%C3%A3o-n%C3%A3o%20comercial-64748b?style=flat-square)](docs/LICENCA.md)
 [![Android 9 testado](https://img.shields.io/badge/Android-9%20testado-3b82f6?style=flat-square)](docs/COMPATIBILIDADE.md)
 [![Offline](https://img.shields.io/badge/conex%C3%A3o-offline-64748b?style=flat-square)](docs/PRIVACIDADE.md)
 
-### [Baixar APK 1.2](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2/U4-Diagnostico-1.2.apk)
+### [Baixar APK 1.2.1](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2.1/U4-Diagnostico-1.2.1.apk)
 
 [Começar a usar](docs/USO.md) · [Perguntas frequentes](#perguntas-frequentes) · [Compatibilidade](docs/COMPATIBILIDADE.md) · [Privacidade](docs/PRIVACIDADE.md) · [Compilar](docs/DESENVOLVIMENTO.md)
 
@@ -34,11 +34,11 @@ O **U4 Diagnóstico** é um auxiliar gratuito e offline para o projetor BYINTEK 
 | **Diagnóstico em um arquivo** | Reúne dados técnicos e APKs de configurações em um ZIP salvo no aparelho. |
 | **Funcionamento offline** | O auxiliar não possui permissão de acesso à internet. |
 
-O acesso foi confirmado em **uma unidade BYINTEK U4 com Android 9**, firmware `20250217_111113`. O menu abriu, o usuário ativou a opção ADB e a conexão pela rede funcionou. Outras revisões precisam de verificação própria.
+O acesso foi confirmado com a versão **1.2** em **uma unidade BYINTEK U4 com Android 9**, firmware `20250217_111113`. O menu abriu, o usuário ativou a opção ADB e a conexão pela rede funcionou. A revisão **1.2.1** acrescenta os termos e avisos de licenciamento; passou pela compilação e verificações locais, sem novo teste no aparelho. Outras revisões precisam de verificação própria.
 
 ## Comece em quatro passos
 
-1. **Instale** o [APK da release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2), por exemplo usando um pendrive.
+1. **Instale** o [APK da release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1), por exemplo usando um pendrive.
 2. **Abra** o U4 Diagnóstico e escolha **Abrir menu CVTE identificado no seu projetor**.
 3. **Ative** somente **Debug → ADB Enable → On**, dentro do menu original.
 4. **Saia** com **Voltar** e conecte o computador ao IP do projetor, na porta `5555` nesse firmware.
@@ -92,7 +92,7 @@ Volte ao menu e selecione **Debug → ADB Enable → Off**. Fechar o menu ou des
 
 ### O aplicativo é gratuito? Onde baixar com segurança?
 
-Sim. O código é aberto sob [MIT](LICENSE), e o [APK está nos anexos da release deste repositório](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2). Compare o SHA-256 com o checksum publicado. O app é independente, sem vínculo oficial com BYINTEK ou CVTE.
+Sim. O uso é gratuito, o código está disponível e a publicação atual tem [redistribuição não comercial](docs/LICENCA.md). O [APK está nos anexos da release deste repositório](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1). Compare o SHA-256 com o checksum publicado. O app é independente, sem vínculo oficial com BYINTEK ou CVTE.
 
 ## Seus dados ficam no aparelho
 
@@ -125,19 +125,19 @@ O ambiente validado usa **JDK 21**, **Android Platform 35** e **Build Tools 34.0
 <details>
 <summary><strong>Verificar o APK publicado</strong></summary>
 
-SHA-256 de `U4-Diagnostico-1.2.apk`:
+SHA-256 de `U4-Diagnostico-1.2.1.apk`:
 
 ```text
-a72044cc22f8cadd87a3e589926ff9a5d3ae353961394849ffb8503bbceb3187
+5e27b87e73cc7e59cbea49d4a44a9eba8d90ad9315ce7303058dbbaf1bcacc34
 ```
 
 No PowerShell:
 
 ```powershell
-Get-FileHash .\U4-Diagnostico-1.2.apk -Algorithm SHA256
+Get-FileHash .\U4-Diagnostico-1.2.1.apk -Algorithm SHA256
 ```
 
-O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2) e em [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt).
+O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1) e em [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt).
 
 </details>
 
@@ -152,12 +152,15 @@ O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnost
 | [Desenvolvimento](docs/DESENVOLVIMENTO.md) | Ambiente, testes, compilação e assinatura. |
 | [Histórico](CHANGELOG.md) | Evolução das versões do auxiliar. |
 | [Como contribuir](CONTRIBUTING.md) | Relatos úteis e alterações no código. |
+| [Licença e compartilhamento](docs/LICENCA.md) | Uso gratuito, restrições de redistribuição e publicação anterior. |
 
 ## Licença
 
-**Gratuito e de código aberto, sob a [licença MIT](LICENSE).** Preserve os avisos de autoria e licença ao compartilhar o projeto. O software é fornecido sem garantia.
+**Uso gratuito, código disponível e redistribuição não comercial**, conforme os [termos da publicação atual](LICENSE). Não é autorizada a venda ou a redistribuição comercial do código, do APK ou de versões modificadas sob esses termos. O compartilhamento sem cobrança e para fins não comerciais é permitido, preservando os avisos e a licença.
 
-A licença cobre o código e os materiais autorais deste projeto. Os APKs do fabricante eventualmente copiados pelo diagnóstico permanecem sujeitos às licenças dos respectivos titulares e não são distribuídos neste repositório.
+**A publicação anterior 1.2 e o material já divulgado sob MIT mantêm as permissões daquela publicação.** A mudança não impõe uma proibição retroativa sobre esse material. Veja a [explicação da transição](docs/LICENCA.md) e o [NOTICE](NOTICE).
+
+A licença cobre os materiais oferecidos pelo titular sob esses termos, respeitando os direitos anteriormente concedidos. O software é fornecido sem garantia. Os APKs do fabricante eventualmente copiados pelo diagnóstico permanecem sujeitos às licenças dos respectivos titulares e não são distribuídos neste repositório.
 
 <div align="center">
 

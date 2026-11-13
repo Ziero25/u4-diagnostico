@@ -1,8 +1,10 @@
+> **Publicação anterior sob MIT.** A versão atual é a [1.2.1](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1), oferecida sob novos termos de redistribuição não comercial. Esta release 1.2 e os direitos já concedidos para seu material permanecem sob os termos anteriores. Veja o [aviso de transição](https://github.com/Ziero25/u4-diagnostico/blob/main/NOTICE).
+
 **BYINTEK U4 — acesso ao ADB pelo menu original CVTE, sem root na revisão testada.**
 
 APK gratuito e offline. Testado em uma unidade com Android 9 e firmware `20250217_111113`. A ativação do ADB é manual no menu do fabricante.
 
-**[Guia de uso](https://github.com/Ziero25/u4-diagnostico/blob/main/docs/USO.md)** · **[Compatibilidade](https://github.com/Ziero25/u4-diagnostico/blob/main/docs/COMPATIBILIDADE.md)** · **[Licença MIT](https://github.com/Ziero25/u4-diagnostico/blob/main/LICENSE)**
+**[Guia de uso](https://github.com/Ziero25/u4-diagnostico/blob/main/docs/USO.md)** · **[Compatibilidade](https://github.com/Ziero25/u4-diagnostico/blob/main/docs/COMPATIBILIDADE.md)** · **[Licença MIT desta publicação](https://github.com/Ziero25/u4-diagnostico/blob/main/licenses/legacy/MIT.txt)**
 
 **[English documentation](https://github.com/Ziero25/u4-diagnostico/blob/main/README.en.md)** · **[English usage guide](https://github.com/Ziero25/u4-diagnostico/blob/main/docs/en/USAGE.md)**
 
@@ -21,6 +23,8 @@ SHA-256 do APK: a72044cc22f8cadd87a3e589926ff9a5d3ae353961394849ffb8503bbceb3187
 O código e os materiais autorais do auxiliar são gratuitos e distribuídos sob licença MIT. O arquivo LICENSE acompanha esta release. Os APKs proprietários do fabricante coletados em diagnósticos não fazem parte da distribuição.
 
 ### English
+
+**Earlier MIT publication.** The current release is [1.2.1](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1), offered under new noncommercial-redistribution terms. This 1.2 release and previously granted rights for its material remain under the earlier terms; see [NOTICE](https://github.com/Ziero25/u4-diagnostico/blob/main/NOTICE).
 
 U4 Diagnóstico is a free, offline helper for accessing the original CVTE menu on the **BYINTEK U4 Android projector**. The shortcut worked without root on one tested unit running **Android 9, firmware `20250217_111113`**, with `com.cvte.fac.menu` version `1.2.70` and the documented signing certificate. Support for other revisions is unconfirmed.
 

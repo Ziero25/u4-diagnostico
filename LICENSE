@@ -1,21 +1,61 @@
-MIT License
+U4 Diagnostico - Free Use and Noncommercial Redistribution License 1.0
+Effective date: 2026-11-13. Offered for version 1.2.1 and subsequent
+publications that expressly include these terms.
 
 Copyright (c) 2026 Ziero25
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+These terms cover the original source code, compiled application (APK),
+documentation and visual assets offered by the copyright holder under this
+license (the "Software"). They do not cover manufacturer software or other
+third-party materials, which retain their own terms.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Free use and modification
+
+Permission is granted, without a license fee, to download, install, run,
+study, copy for your own use and modify the Software. Running the Software
+on your own device, including in your work, is permitted. Private changes
+do not have to be published.
+
+3. Noncommercial redistribution
+
+You may share original or modified copies of the source code or APK only
+without charging for them and only for noncommercial purposes. All copies
+must retain this license, the copyright notice and applicable third-party
+notices. Modified copies must clearly identify that they were modified and
+must not claim to be an official release of this project or its author.
+
+4. No sale or commercial redistribution
+
+No permission is granted under these terms to sell, resell, rent, license
+for a fee or otherwise commercially redistribute the Software, its source
+code, APK or modified versions. This includes distributing copies as part
+of a paid product, paid bundle, subscription or paid installation service,
+even if the Software is described as a free item within that offering.
+
+You may not sublicense the Software under terms that permit those acts.
+This restriction concerns sale and redistribution; the personal or internal
+use permitted in section 2 does not itself constitute redistribution.
+
+5. Earlier grants and third-party rights
+
+These terms do not revoke or replace permissions already granted under
+another license for earlier publications. Version 1.2 and material already
+published under MIT retain the rights granted for that material. The earlier
+MIT notice is preserved in licenses/legacy/MIT.txt and in APK notices.
+Only rights held by this copyright holder can be granted or restricted here.
+
+6. Reserved rights
+
+Rights not expressly granted are reserved. These terms do not grant rights
+to third-party trademarks or suggest endorsement by BYINTEK or CVTE. They do
+not restrict rights that applicable law grants independently of this license.
+
+7. No warranty or liability
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED "AS IS",
+WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.

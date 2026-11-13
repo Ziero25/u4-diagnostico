@@ -4,7 +4,7 @@
 
 ## 1. Install
 
-Download `U4-Diagnostico-1.2.apk` from [this repository's release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2). Copy it to a USB drive, connect the drive to the projector and open the APK in a file manager.
+Download `U4-Diagnostico-1.2.1.apk` from [this repository's release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1). Copy it to a USB drive, connect the drive to the projector and open the APK in a file manager.
 
 Approve the installation when Android asks. An existing version signed with the same key can be updated in place. Check [known compatibility](COMPATIBILITY.md) first: the U4 name alone does not identify a firmware revision.
 

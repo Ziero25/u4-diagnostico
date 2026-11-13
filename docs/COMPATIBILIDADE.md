@@ -14,7 +14,7 @@
 | Aplicativo de configurações | `com.cvte.settings` |
 | Aplicativo do menu técnico | `com.cvte.fac.menu` · `1.2.70` |
 
-O atalho abriu o menu técnico nessa unidade. O usuário ativou ADB e o computador confirmou a conexão. A compilação `userdebug` não foi usada como prova de root; o relatório não encontrou um executável `su` acessível.
+O atalho da versão 1.2 abriu o menu técnico nessa unidade. O usuário ativou ADB e o computador confirmou a conexão. A revisão 1.2.1 acrescenta termos e avisos de licença; foi compilada e verificada localmente, sem novo teste no aparelho. A compilação `userdebug` não foi usada como prova de root; o relatório não encontrou um executável `su` acessível.
 
 ## Verificações antes da chamada
 

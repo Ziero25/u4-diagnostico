@@ -27,4 +27,4 @@ Mantenha as verificações de versão, certificado e acesso ao componente. O sup
 
 O projeto não distribui APKs proprietários ou chaves privadas e não inclui rotinas de reset, calibração, remoção de aplicativos ou instalação de root como parte do atalho CVTE.
 
-As contribuições incorporadas ao projeto são distribuídas sob a [licença MIT](LICENSE).
+As novas contribuições são incorporadas sob os [termos atuais de uso gratuito e redistribuição não comercial](LICENSE). Consulte a [transição de licenciamento](docs/LICENCA.md); as permissões anteriores sobre material já publicado sob MIT permanecem válidas.

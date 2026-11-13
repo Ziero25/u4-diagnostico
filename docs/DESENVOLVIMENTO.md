@@ -100,9 +100,11 @@ Também existem os parâmetros `-StorePassword` e `-KeyPassword`. Evite gravar s
 ## Verificar uma release
 
 ```powershell
-Get-FileHash .\U4-Diagnostico-1.2.apk -Algorithm SHA256
+Get-FileHash .\U4-Diagnostico-1.2.1.apk -Algorithm SHA256
 ```
 
 Compare o resultado com [SHA256SUMS.txt](../downloads/SHA256SUMS.txt). O script de build também executa a verificação de assinatura com Apksigner.
 
-O código e os materiais autorais são distribuídos sob [MIT](../LICENSE). Componentes proprietários do fabricante não fazem parte do projeto.
+O build inclui `LICENSE`, `NOTICE` e o aviso MIT histórico como arquivos em `assets/` do APK. Eles são apresentados pelo botão **Licença e condições de uso**.
+
+As novas publicações seguem os [termos de uso gratuito e redistribuição não comercial](../LICENSE), respeitando as permissões anteriores sobre material já publicado. Veja a [transição de licenciamento](LICENCA.md). Componentes proprietários do fabricante não fazem parte do projeto.

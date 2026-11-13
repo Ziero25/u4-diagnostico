@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
         scroll.setFillViewport(true);
         scroll.addView(layout);
         setContentView(scroll);
-        TextView title = text("U4 Diagnóstico 1.2 — acesso CVTE", 28);
+        TextView title = text("U4 Diagnóstico 1.2.1 — acesso CVTE", 28);
         layout.addView(title);
         layout.addView(text("Aplicativo local criado para este diagnóstico. Não é da BYINTEK.\n"
                 + "Não acessa a internet. Não troca firmware nem remove aplicativos.", 16));
@@ -81,11 +81,34 @@ public class MainActivity extends Activity {
         Button undoRoot = button("Desfazer alterações do modo avançado");
         if (rootPrefs().getBoolean("pending", false)) layout.addView(undoRoot);
         undoRoot.setOnClickListener(v -> confirmRoot(true));
+        layout.addView(text("Uso gratuito. Venda e redistribuição comercial não autorizadas pelos termos atuais. "
+                + "Permissões anteriores sob MIT permanecem válidas para o material que abrangem.", 14));
+        Button license = button("Licença e condições de uso");
+        layout.addView(license);
+        license.setOnClickListener(v -> showLicense());
         status = text("Pronto. Use Abrir menu CVTE e altere somente Debug → ADB Enable → On.\n"
                 + "O app chama o serviço original de fábrica; não exige root e não ativa ADB automaticamente. "
                 + "Se o menu não abrir ou não mostrar ADB, use Gerar diagnóstico.", 16);
         layout.addView(status);
         cvteOpen.requestFocus();
+    }
+
+    private void showLicense() {
+        try {
+            StringBuilder terms = new StringBuilder();
+            for (String asset : new String[]{"LICENSE.txt", "NOTICE.txt", "LEGACY-MIT.txt"}) {
+                if (terms.length() > 0) terms.append("\n\n---\n\n");
+                try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+                        getAssets().open(asset), StandardCharsets.UTF_8))) {
+                    String line;
+                    while ((line = reader.readLine()) != null) terms.append(line).append('\n');
+                }
+            }
+            new AlertDialog.Builder(this).setTitle("Licença e condições de uso")
+                    .setMessage(terms.toString()).setPositiveButton("Fechar", null).show();
+        } catch (IOException e) {
+            message("Não foi possível ler os termos incluídos no APK. Consulte o arquivo LICENSE do projeto.");
+        }
     }
 
     private TextView text(String value, int size) {
@@ -449,7 +472,7 @@ public class MainActivity extends Activity {
         if (!dir.isDirectory() && !dir.mkdirs()) throw new IOException("Pasta Downloads indisponível");
         File result = new File(dir, "U4-diagnostico.zip");
         File temporary = new File(dir, "U4-diagnostico.zip.partial");
-        StringBuilder report = new StringBuilder("U4 Diagnóstico 1.2\nArquivo criado localmente. Sem dados de contas.\n");
+        StringBuilder report = new StringBuilder("U4 Diagnóstico 1.2.1\nArquivo criado localmente. Sem dados de contas.\n");
         String[] keys = {"ro.build.fingerprint", "ro.build.display.id", "ro.build.version.incremental", "ro.build.type", "ro.build.tags",
                 "ro.build.version.release", "ro.build.version.sdk", "ro.product.board", "ro.product.device", "ro.product.name",
                 "ro.product.manufacturer", "ro.product.model", "ro.product.rom.rommodelnumber", "ro.CVT_DEF_ADB_DEFAULT_VALUE",

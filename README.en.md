@@ -12,12 +12,12 @@
 
 [Português](README.md) · **English**
 
-[![Release v1.2](https://img.shields.io/badge/release-v1.2-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2)
-[![MIT license](https://img.shields.io/badge/license-MIT-14b8a6?style=flat-square)](LICENSE)
+[![Release v1.2.1](https://img.shields.io/badge/release-v1.2.1-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1)
+[![Noncommercial redistribution](https://img.shields.io/badge/redistribution-noncommercial-64748b?style=flat-square)](docs/en/LICENSING.md)
 [![Android 9 tested](https://img.shields.io/badge/Android-9%20tested-3b82f6?style=flat-square)](docs/en/COMPATIBILITY.md)
 [![Offline](https://img.shields.io/badge/connection-offline-64748b?style=flat-square)](docs/en/PRIVACY.md)
 
-### [Download APK 1.2](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2/U4-Diagnostico-1.2.apk)
+### [Download APK 1.2.1](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2.1/U4-Diagnostico-1.2.1.apk)
 
 [Get started](docs/en/USAGE.md) · [FAQ](#frequently-asked-questions) · [Compatibility](docs/en/COMPATIBILITY.md) · [Privacy](docs/en/PRIVACY.md) · [Build](docs/en/DEVELOPMENT.md)
 
@@ -34,11 +34,11 @@
 | **Local diagnostic ZIP** | Collects selected technical details and readable settings APKs into one file on the device. |
 | **Offline operation** | The helper does not declare the Android internet permission. |
 
-The menu opened on the tested unit, the owner enabled ADB manually, and a computer successfully connected over the local network. Other hardware and firmware revisions require their own verification.
+The menu opened on the tested unit using version **1.2**, the owner enabled ADB manually, and a computer successfully connected over the local network. Version **1.2.1** adds license terms and notices; its build and local checks passed, without a new hardware test. Other hardware and firmware revisions require their own verification.
 
 ## Get started in four steps
 
-1. **Install** the [release APK](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2), for example from a USB drive.
+1. **Install** the [release APK](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1), for example from a USB drive.
 2. **Open** U4 Diagnóstico and select **Abrir menu CVTE identificado no seu projetor** — “Open the CVTE menu identified on your projector”.
 3. **Enable** only **Debug → ADB Enable → On** in the original menu.
 4. **Exit** with **Back**, then connect the computer to the projector's IP address on port `5555` for this firmware.
@@ -95,7 +95,7 @@ Return to the original menu and set **Debug → ADB Enable → Off**. Closing th
 
 ### Is it free, and where should I download it?
 
-Yes. The source is available under [MIT](LICENSE), and the [APK is attached to this repository's release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2). Check the published SHA-256 after downloading. This is an independent project, not an official BYINTEK or CVTE app.
+Yes. It is free to use, with source available and [noncommercial redistribution terms](docs/en/LICENSING.md) for the current publication. The [APK is attached to this repository's release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1). Check the published SHA-256 after downloading. This is an independent project, not an official BYINTEK or CVTE app.
 
 ## Your report stays on the device
 
@@ -123,17 +123,17 @@ The validated environment uses JDK 21, Android Platform 35 and Build Tools 34.0.
 <details>
 <summary><strong>Verify the published APK</strong></summary>
 
-SHA-256 of `U4-Diagnostico-1.2.apk`:
+SHA-256 of `U4-Diagnostico-1.2.1.apk`:
 
 ```text
-a72044cc22f8cadd87a3e589926ff9a5d3ae353961394849ffb8503bbceb3187
+5e27b87e73cc7e59cbea49d4a44a9eba8d90ad9315ce7303058dbbaf1bcacc34
 ```
 
 ```powershell
-Get-FileHash .\U4-Diagnostico-1.2.apk -Algorithm SHA256
+Get-FileHash .\U4-Diagnostico-1.2.1.apk -Algorithm SHA256
 ```
 
-Compare with [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt) or the checksum attached to the [release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2).
+Compare with [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt) or the checksum attached to the [release](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2.1).
 
 </details>
 
@@ -145,13 +145,16 @@ Compare with [downloads/SHA256SUMS.txt](downloads/SHA256SUMS.txt) or the checksu
 | [Compatibility](docs/en/COMPATIBILITY.md) | Tested revision, service contract and limits. |
 | [Privacy](docs/en/PRIVACY.md) | Collected data, permissions and report handling. |
 | [Development](docs/en/DEVELOPMENT.md) | Tools, tests, build, signing and contributions. |
+| [License and sharing](docs/en/LICENSING.md) | Free use, redistribution restrictions and the earlier publication. |
 | [Version history — Portuguese](CHANGELOG.md) | Changes between app versions. |
 
 ## License
 
-**Free and open source under the [MIT license](LICENSE).** Retain the copyright and license notices when sharing the project. The software is provided without warranty.
+**Free to use, source available, with noncommercial redistribution**, under the [current publication's terms](LICENSE). Those terms do not authorize selling or commercially redistributing the source, APK or modified versions. Sharing without charge and for noncommercial purposes is permitted while preserving the notices and license.
 
-The license covers this project's original code and materials. Manufacturer APKs that a report may copy remain subject to their owners' licenses and are not distributed in this repository.
+**The earlier 1.2 publication and material already released under MIT retain the rights granted for that publication.** The change does not impose a retroactive prohibition on that material. See the [licensing transition](docs/en/LICENSING.md) and [NOTICE](NOTICE).
+
+The license covers materials offered by the copyright holder under these terms, subject to previously granted rights. The software is provided without warranty. Manufacturer APKs that a report may copy remain subject to their owners' licenses and are not distributed in this repository.
 
 <div align="center">
 

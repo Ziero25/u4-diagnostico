@@ -87,7 +87,7 @@ The script also accepts `-StorePassword` and `-KeyPassword`. Do not commit passw
 ## Verify a release
 
 ```powershell
-Get-FileHash .\U4-Diagnostico-1.2.apk -Algorithm SHA256
+Get-FileHash .\U4-Diagnostico-1.2.1.apk -Algorithm SHA256
 ```
 
 Compare with [SHA256SUMS.txt](../../downloads/SHA256SUMS.txt). The build script also runs Apksigner verification.
@@ -98,4 +98,6 @@ Open an [issue](https://github.com/Ziero25/u4-diagnostico/issues) with the helpe
 
 Keep changes scoped. Run the tests and build for code changes, update relevant documentation and describe what was validated locally or on hardware. Preserve version, certificate and service-access checks. A new revision requires evidence of its own contract.
 
-The CVTE shortcut does not include reset, calibration, app removal or root installation routines. Contributions incorporated into the project use the [MIT license](../../LICENSE). Manufacturer components are not part of the distribution.
+The CVTE shortcut does not include reset, calibration, app removal or root installation routines. New contributions use the [current free-use and noncommercial-redistribution terms](../../LICENSE), subject to previously granted rights; see the [licensing transition](LICENSING.md). Manufacturer components are not part of the distribution.
+
+The build embeds `LICENSE`, `NOTICE` and the historical MIT notice as APK assets. They are displayed by the **Licença e condições de uso** button.
