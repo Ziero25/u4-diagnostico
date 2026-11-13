@@ -1,6 +1,6 @@
 # Compatibilidade e funcionamento
 
-[← Voltar ao início](../README.md)
+[← Voltar ao início](../README.md) · [English](en/COMPATIBILITY.md)
 
 ## Unidade em que o acesso foi confirmado
 

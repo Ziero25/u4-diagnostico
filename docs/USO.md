@@ -1,6 +1,6 @@
 # Guia de uso
 
-[← Voltar ao início](../README.md)
+[← Voltar ao início](../README.md) · [English](en/USAGE.md)
 
 ## 1. Instalar
 

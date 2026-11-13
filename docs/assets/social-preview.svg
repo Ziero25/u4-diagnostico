@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">BYINTEK U4 — ADB sem root na revisão testada</title>
+  <desc id="desc">U4 Diagnóstico. Acesso ao menu CVTE, offline, gratuito e sob MIT. Testado em Android 9, firmware 20250217_111113.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#113438"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#2dd4bf" stop-opacity="0.18"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+    <linearGradient id="beam"><stop stop-color="#5eead4" stop-opacity="0.26"/><stop offset="1" stop-color="#5eead4" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1060" cy="280" r="280" fill="url(#glow)"/>
+  <g stroke="#2c535b" opacity="0.28"><path d="M850 100V510M930 100V510M1010 100V510M1090 100V510M1170 100V510"/><path d="M830 140H1230M830 220H1230M830 300H1230M830 380H1230M830 460H1230"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="64" y="49" width="310" height="36" rx="18" fill="#173d40"/>
+    <text x="84" y="73" fill="#99f6e4" font-size="16" font-weight="600" letter-spacing="1.2">U4 DIAGNÓSTICO · ANDROID APP</text>
+    <text x="60" y="193" fill="#f8fafc" font-size="80" font-weight="700" letter-spacing="-2">BYINTEK U4</text>
+    <text x="62" y="277" fill="#5eead4" font-size="65" font-weight="700" letter-spacing="-1.7">ADB sem root*</text>
+    <text x="65" y="335" fill="#d4e3e9" font-size="26">Menu original CVTE · Offline · MIT</text>
+    <text x="65" y="380" fill="#a8bdc8" font-size="22">ADB access without root on the tested firmware.</text>
+    <rect x="65" y="421" width="360" height="57" rx="12" fill="#5eead4"/>
+    <text x="245" y="457" text-anchor="middle" fill="#0b232d" font-size="18" font-weight="700" letter-spacing="0.6">BAIXAR APK / DOWNLOAD APK</text>
+    <text x="447" y="457" fill="#b5ccd4" font-size="21">v1.2</text>
+    <text x="65" y="523" fill="#a8bdc8" font-size="18">* Testado / Tested: Android 9 · 20250217_111113</text>
+    <path d="M65 552H1215" stroke="#31535c"/>
+    <text x="65" y="592" fill="#c9dde5" font-size="22">github.com/Ziero25/u4-diagnostico</text>
+    <text x="1215" y="592" text-anchor="end" fill="#81a6b1" font-size="16">Independent project · Projeto independente</text>
+  </g>
+  <path d="M1090 205L1260 140V382L1090 306Z" fill="url(#beam)"/>
+  <rect x="865" y="174" width="268" height="182" rx="30" fill="#142c38" stroke="#73e1d2" stroke-width="2"/>
+  <rect x="882" y="191" width="234" height="148" rx="19" fill="#0b1924"/>
+  <g stroke="#648c99" stroke-width="5" stroke-linecap="round"><path d="M904 227H959M904 246H959M904 265H959M904 284H941"/></g>
+  <circle cx="1062" cy="263" r="41" fill="#153e45" stroke="#5eead4" stroke-width="2"/>
+  <circle cx="1062" cy="263" r="26" fill="#225963"/>
+  <circle cx="1053" cy="254" r="10" fill="#99f6e4"/>
+  <path d="M902 358V372M1096 358V372" stroke="#88aeb8" stroke-width="8" stroke-linecap="round"/>
+  <rect x="881" y="403" width="238" height="48" rx="12" fill="#13383d" stroke="#315e61"/>
+  <text x="1000" y="433" text-anchor="middle" fill="#99f6e4" font-family="Segoe UI,Arial,sans-serif" font-size="20">CVTE → Debug → ADB</text>
+</svg>

@@ -1,6 +1,6 @@
 # Privacidade e permissões
 
-[← Voltar ao início](../README.md)
+[← Voltar ao início](../README.md) · [English](en/PRIVACY.md)
 
 ## Funcionamento local
 

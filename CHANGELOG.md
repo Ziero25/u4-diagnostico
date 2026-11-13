@@ -1,5 +1,14 @@
 # Histórico
 
+## Apresentação e documentação bilíngue
+
+- Título e descrição com BYINTEK U4, ADB e CVTE em destaque.
+- Perguntas frequentes sobre ADB, opções de desenvolvedor e configurações abertas pelo Projectivy.
+- README e guias de uso, compatibilidade, privacidade e desenvolvimento em inglês.
+- Imagem de compartilhamento e tópicos do repositório.
+- Compatibilidade limitada à revisão testada indicada junto à chamada principal.
+- APK 1.2 preservado, sem alterações no código, na interface ou na assinatura.
+
 ## Documentação e licença
 
 - README reorganizado, com capa própria, download em destaque e navegação entre os guias.

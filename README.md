@@ -1,12 +1,16 @@
 <div align="center">
 
-![U4 Diagnóstico — diagnóstico offline e acesso ao menu CVTE](docs/assets/cover.svg)
+![BYINTEK U4 — acesso ao ADB pelo menu CVTE, sem root na revisão testada](docs/assets/social-preview.png)
 
-# U4 Diagnóstico
+# BYINTEK U4 — acesso ao ADB e diagnóstico
 
-**O menu certo. Os dados do seu aparelho. Tudo local.**
+**Acesse a opção ADB pelo menu original CVTE, sem root na revisão testada.**
 
-Um pequeno auxiliar Android para abrir o menu original da CVTE e investigar o BYINTEK U4.
+O **U4 Diagnóstico** é um auxiliar gratuito e offline para o projetor BYINTEK U4. Abra o menu identificado no firmware, ative o ADB manualmente e gere um diagnóstico local quando precisar investigar o aparelho.
+
+**Testado em uma unidade com Android 9 e firmware `20250217_111113`.**
+
+**Português** · [English](README.en.md)
 
 [![Release v1.2](https://img.shields.io/badge/release-v1.2-14b8a6?style=flat-square)](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2)
 [![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-14b8a6?style=flat-square)](LICENSE)
@@ -15,7 +19,7 @@ Um pequeno auxiliar Android para abrir o menu original da CVTE e investigar o BY
 
 ### [Baixar APK 1.2](https://github.com/Ziero25/u4-diagnostico/releases/download/v1.2/U4-Diagnostico-1.2.apk)
 
-[Começar a usar](docs/USO.md) · [Compatibilidade](docs/COMPATIBILIDADE.md) · [Privacidade](docs/PRIVACIDADE.md) · [Compilar](docs/DESENVOLVIMENTO.md)
+[Começar a usar](docs/USO.md) · [Perguntas frequentes](#perguntas-frequentes) · [Compatibilidade](docs/COMPATIBILIDADE.md) · [Privacidade](docs/PRIVACIDADE.md) · [Compilar](docs/DESENVOLVIMENTO.md)
 
 </div>
 
@@ -55,6 +59,40 @@ O botão **Fechar menu CVTE** fecha a janela técnica. Ele não desliga o ADB qu
 | Acesso ao atalho | Sem exigir root |
 
 O nome **U4** ou o processador sozinho não confirma compatibilidade. O aplicativo também confere a assinatura do componente e bloqueia a chamada quando ela diverge. [Entenda as verificações e os limites →](docs/COMPATIBILIDADE.md)
+
+## Perguntas frequentes
+
+### Como ativar ADB no BYINTEK U4?
+
+Na revisão testada, instale o APK, escolha **Abrir menu CVTE identificado no seu projetor** e altere **Debug → ADB Enable → On** no menu original. Saia com **Voltar** e siga o [guia de conexão](docs/USO.md#3-conectar-o-computador). O app abre o menu; a ativação é manual.
+
+### As opções de desenvolvedor não aparecem. Esse app ajuda?
+
+O auxiliar usa um serviço específico do menu CVTE, sem depender da tela padrão de opções de desenvolvedor do Android. Ele confere a versão e o certificado antes da chamada. O resultado foi confirmado somente na [revisão documentada](docs/COMPATIBILIDADE.md).
+
+### O Projectivy abre apenas as configurações do fabricante. O que fazer?
+
+Foi o comportamento observado na unidade usada neste projeto. Nesse caso, o botão **Abrir menu CVTE identificado no seu projetor** oferece o caminho específico que funcionou. Não é necessário trocar o launcher para usar o auxiliar.
+
+### Precisa de root ou de uma atualização de firmware?
+
+O atalho CVTE funciona sem root na revisão testada e não requer instalar outro firmware. A classificação `userdebug` do sistema não significa, por si só, que exista root disponível.
+
+### Funciona em qualquer U4 ou projetor com Android?
+
+Ainda não há essa confirmação. O teste real foi feito em uma unidade BYINTEK U4, Android 9, firmware `20250217_111113`, com `com.cvte.fac.menu` versão `1.2.70` e o certificado documentado. Outras revisões precisam de análise própria. O app bloqueia componentes que não correspondem ao contrato conhecido.
+
+### Ativar ADB melhora o desempenho ou a imagem?
+
+Ativar ADB permite acessar ferramentas de diagnóstico e executar ajustes separados; não melhora o aparelho automaticamente. O U4 Diagnóstico não aplica otimizações, não remove apps e não altera a calibração da imagem.
+
+### Como desativar ADB depois?
+
+Volte ao menu e selecione **Debug → ADB Enable → Off**. Fechar o menu ou desinstalar o auxiliar não desliga o ADB. Confira o encerramento com os passos do [guia de uso](docs/USO.md#4-encerrar-o-acesso).
+
+### O aplicativo é gratuito? Onde baixar com segurança?
+
+Sim. O código é aberto sob [MIT](LICENSE), e o [APK está nos anexos da release deste repositório](https://github.com/Ziero25/u4-diagnostico/releases/tag/v1.2). Compare o SHA-256 com o checksum publicado. O app é independente, sem vínculo oficial com BYINTEK ou CVTE.
 
 ## Seus dados ficam no aparelho
 
@@ -108,6 +146,7 @@ O arquivo de checksums está na [release](https://github.com/Ziero25/u4-diagnost
 | Documento | Conteúdo |
 | :--- | :--- |
 | [Guia de uso](docs/USO.md) | Instalação, menu ADB, diagnóstico e problemas comuns. |
+| [English documentation](README.en.md) | English overview, FAQ and guides. |
 | [Compatibilidade](docs/COMPATIBILIDADE.md) | Revisão testada, contrato do serviço e limitações. |
 | [Privacidade](docs/PRIVACIDADE.md) | Dados coletados, permissões e cuidado com os relatórios. |
 | [Desenvolvimento](docs/DESENVOLVIMENTO.md) | Ambiente, testes, compilação e assinatura. |

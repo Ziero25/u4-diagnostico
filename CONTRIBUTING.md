@@ -1,5 +1,7 @@
 # Como contribuir
 
+[English contribution guide](docs/en/DEVELOPMENT.md#contribute)
+
 Obrigado pelo interesse em melhorar o U4 Diagnóstico.
 
 ## Relatar um problema
